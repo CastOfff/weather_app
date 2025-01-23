@@ -185,7 +185,7 @@ class _WeatherScreen2State extends State<WeatherScreen2> {
                           scrollDirection: Axis.horizontal,
                           itemCount: data['list'].length,
                           itemBuilder: (context, index) {
-                            final forecastWeather = data['list'][index + 1];
+                            final forecastWeather = data['list'][index];
                             final forecastTime = forecastWeather['dt_txt'];
                             final forecastTemp = forecastWeather['main']['temp'];
                             final forecastMain = forecastWeather['weather'][0]['main'];
